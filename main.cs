@@ -38,7 +38,6 @@ public static class Bot
         var startTime = DateTime.UtcNow;
         var startCpuUsage = Process.GetCurrentProcess().TotalProcessorTime;
         await Task.Delay(500);
-
         var endTime = DateTime.UtcNow;
         var endCpuUsage = Process.GetCurrentProcess().TotalProcessorTime;
         var cpuUsedMs = (endCpuUsage - startCpuUsage).TotalMilliseconds;
